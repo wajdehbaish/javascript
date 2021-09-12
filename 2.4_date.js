@@ -15,9 +15,9 @@ function getMonthName() {
 getMonthName()​
 function getYear() {
     return date.getFullYear();
-}​
-//`Today is Sunday the 31 of January, 2021’
+}
+
 function getDateFormat() {
     return `Today is ${getDayName()} the ${getDayOfMonth()} of ${getMonthName()}, ${getYear()}`
-}​
+}
 console.log(getDateFormat())
