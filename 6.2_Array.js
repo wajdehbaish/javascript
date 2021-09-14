@@ -26,3 +26,7 @@ console.log('Mary')
 
 people.unshift('Matt')
 console.log(people)
+
+
+newPeople.push(people)
+console.log(newPeople)
