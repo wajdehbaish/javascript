@@ -44,12 +44,11 @@ let data1 = data.map(function(val) {
     return val.name
 
 })
-console.log(data1);
 
 function before1990(arr) {
     return arr.filter(function(ztam) {
-        return ztam.birthday > "1-1-1990";
+        return (Number(ztam.birthday.split('-')[2]) < 1990);
     })
 
 }
-console.log(before1990(data1));
+console.log(before1990(data));
