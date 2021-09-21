@@ -52,3 +52,17 @@ function before1990(arr) {
 
 }
 console.log(before1990(data));
+
+function foodcounter(cowboy) {
+    let object1 = {};
+    const result1 = cowboy.map((num) => num.favoriteFoods.meats + "," + num.favoriteFoods.fish).join(',').split(',')
+    result1.map(function(value) {
+        return object1[value] = (result1.filter(function(val) {
+            return (val === value)
+        })).length
+    });
+
+    console.log(object1);
+
+}
+foodcounter(data)
