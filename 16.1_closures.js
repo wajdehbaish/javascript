@@ -31,10 +31,17 @@
 // 1
 
 let i;
-for (i = 0; i < 3; i++) {
+console.log('yousef');
+console.log('yousef');
+console.log('yousef');
+for (i = 0; i < 5; i++) {
+
     const log = () => {
+
         console.log(i);
     }
-    setTimeout(log, 100);
+    setTimeout(log, 0);
 }
 // 3 3 3
+
+console.log('ameer');
