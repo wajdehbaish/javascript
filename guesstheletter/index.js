@@ -59,21 +59,14 @@ tryLetter.addEventListener("keyup", () => {
             tryLetter.style.display = "none";
             reload.style.display = "block";
 
-            reload.addEventListener("click", () => {
-                tryLetter.style.display = "block";
-                messeage.innerHTML = ``;
-                letter.innerHTML = "?";
-                win.innerHTML = "Key Guessed?";
-                reload.style.display = "none";
-                triedletters = "";
-                randomIndex = Math.floor(Math.random() * possibleAnswers.length);
-                randomLetter = possibleAnswers[randomIndex];
-                console.log(randomLetter);
 
-            });
         }
     } else {
         messeage.innerHTML = `please inter a valid letter`;
         tryLetter.value = "";
     }
+});
+reload.addEventListener("click", () => {
+    location.reload()
+
 });
